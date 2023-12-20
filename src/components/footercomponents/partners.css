@@ -1,0 +1,22 @@
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 1.5rem;
+}
+
+.item img{
+    width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .partners{
+        flex-direction: column;
+        padding: 0;
+    }
+    .item{
+        width: 150px;
+    }
+}

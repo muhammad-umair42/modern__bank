@@ -1,0 +1,142 @@
+.app__wrapper-home{
+    min-height: 100vh;
+    display: flex;
+    padding: 2rem 0rem 4rem 6rem;
+
+}
+
+.app__wrapper-home_content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.discount{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.discount__img{
+width: 30px;
+}
+
+.discount__img img{
+    width: 100%;
+}
+
+.heading__box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.heading__box-content{
+    flex: 1;
+    font-weight: 500;
+
+}
+
+.heading__box-circle{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #33BBCF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.app__wrapper-home_img{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__wrapper-home_img img{
+    width: 80%;
+}
+
+
+@media screen and (min-width:2000px){
+    .app__wrapper-home{
+        justify-content: center;
+        align-items: center;
+    }
+    .app__wrapper-home_content{
+        justify-content: center;
+        padding-left: 8rem;
+    }
+    .heading__box-content{
+        font-size: 70px;
+        font-weight: 600;
+    }
+    .home_content-text{
+        font-size: 30px;
+    }
+    .heading__box-circle{
+        font-size: 30px;
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .discount{
+        width: 300px;
+    }
+    .discount div:last-child{
+        font-size: 15px;
+    }
+    .heading__box-content{
+        font-size: 40px;
+    }
+    .home_content-text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:780px){
+    .app__wrapper-home{
+        flex-direction: column;
+    }
+    .app__wrapper-home_content{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .discount{
+        width: auto;
+    }
+    .discount__img{
+        font-size: 14px;
+    }
+    .discount div:last-child{
+        font-size: 10px;
+    }
+    .app__wrapper-home{
+        padding: 1rem 0rem 1rem 1rem;
+    }
+    .heading__box{
+        flex-direction: column;
+        gap: 40px;
+        padding: 0.5rem;
+    }
+    .heading__box-content{
+        font-size: 30px;
+    }
+    .heading__box-circle{
+        padding-bottom: 1rem;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+}

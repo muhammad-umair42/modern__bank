@@ -1,0 +1,134 @@
+
+.Auth{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    background-color: #040C18;
+}
+
+.auth__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #33BBCF;
+border-radius: 8px;
+padding: 0.5rem;
+box-sizing: border-box;
+}
+
+.auth__box-heading{
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+font-weight: 600;
+font-size: 30px;
+padding: 0 0 1rem 0;
+}
+
+.auth__box-inputs-login{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 20px;
+}
+
+.authbox__inputs-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 1rem;
+}
+
+.input__item{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
+gap: 10px;
+}
+
+.input__item-title{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.input__item-input{
+    width: 200px;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    outline: none;
+    border: 2px solid #5CE1E6;
+}
+
+.auth__button{
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+border-radius: 10px;
+border: none;
+padding: 0.5rem 2rem;
+color: black;
+margin: 1rem;
+cursor: pointer;
+}
+
+.login__message{
+    font-size: 12px;
+    color: red;
+    padding: 5px;
+}
+.new__account{
+    font-size: 12px;
+    color: #5CE1E6;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.new__account:hover{
+    text-decoration: underline;
+}
+
+.green{
+    color: aquamarine;
+}
+
+@media screen and (min-width:2000px){
+    .auth__box{
+        padding: 2rem;
+    }
+    .auth__box-heading{
+            font-size: 50px;
+    }
+
+    .input__item-title{
+        font-size: 20px;
+    }
+    .input__item-input{
+        width: 300px;
+        padding:10px;
+        font-size: 15px;
+    }
+    .login__message{
+        font-size: 15px;
+    }
+
+    .new__account{
+        font-size: 15px;
+    }
+    .auth__button{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .authbox__inputs-register{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

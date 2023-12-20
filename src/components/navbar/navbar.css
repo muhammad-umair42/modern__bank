@@ -1,0 +1,138 @@
+
+.Navbar{
+    font-family: var(--font-base);
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom:1px solid #00295c;
+    z-index: 10000;
+    
+    transition: all 1s ease-out;
+}
+
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+
+}
+
+.nav__logo{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav__logo img{
+    width: 100%;
+}
+
+.nav__list-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__list-item a{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.nav__list-item a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav__hamburger{
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+}
+
+.nav__ham-list{
+   background-color: rgb(72, 72, 94);
+   padding: 1rem 1rem;
+    position: absolute;
+    top:10;
+    right:15px;
+    border-radius: 15px;
+}
+
+.nav__ham-list-items{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   
+}
+
+.nav__ham-list-item a{
+    text-decoration: none;
+}
+
+.login:hover{
+        border-bottom: 1px solid #33BBCF;
+        padding-bottom: 2px;
+}
+
+
+
+
+
+@media screen and (min-width: 2000px ){
+    .nav__logo{
+        width: 200px;
+    }
+    .Navbar{
+        padding: 2rem;
+    }
+    .nav__list-item a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1200px){
+
+    .nav__wrapper{
+        padding: 0rem 2rem;
+    }
+    .nav__logo{
+        width: 100px;
+    }
+    .nav__list-item a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px){
+        .Navbar{
+            padding: 0.5rem;
+        }
+        .nav__wrapper{
+            padding: 0rem 0.3rem;
+        }
+        .nav__logo{
+            width: 80px;
+        }
+        
+        .nav__list{
+            display: none;
+        }
+        .nav__hamburger{
+            display: inline;
+        }
+}
+
+
+

@@ -1,0 +1,50 @@
+.footer-card{
+    margin:4rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+   
+}
+
+.footer-card-content{
+    flex: 1;
+
+}
+.footer-card-button{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+@media screen and (min-width:2000px) {
+    .footer-card{
+        margin: 6rem;
+        padding: 6rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+        .footer-card{
+            flex-direction: column;
+            gap: 50px;
+            margin: 2rem 0 2rem 0;
+            padding: 2rem;
+        }
+        .footer-card_heading{
+            font-size: 20px;
+        }
+        .footer-card_text{
+            font-size: 15px;
+        }
+        .footer-cbutton{
+            padding: 1rem;
+            width: auto;
+            height: auto;
+            font-size: 12px;
+        }
+}

@@ -1,0 +1,144 @@
+.clients{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 6rem ;
+    gap: 60px;
+}
+
+.clients__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.clients__cards{
+    padding: 1rem;
+    display: grid;
+    gap: 60px;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.card:hover{
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 20px;
+}
+
+.card_text{
+    font-size: 20px;
+}
+
+.card_person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.card_person-img{
+    width: 70px;
+}
+
+.card_person-img img{
+    width: 100%;
+}
+
+.card_person-info_name{
+    font-weight: 500;
+}
+
+@media screen and (min-width:2000px){
+        .clients__content{
+            flex-direction: column;
+            gap: 50px;
+        }
+        .card{
+            width: 500px;
+        }
+        .card_text{
+            font-size: 30px;
+        }
+}
+
+@media screen and (max-width:1200px){
+    .clients__cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:800px){
+    .clients{
+        padding: 2rem;
+    }
+    .clients__cards{
+        grid-template-columns:1fr;
+    }
+    .clients__content{
+        flex-direction: column;
+    }
+    .clients__content-heading{
+        font-size: 20px;
+    }
+    .clients__content-text{
+        font-size: 15px;
+    }
+    .card{
+        width: auto;
+    }
+    .card_text{
+        font-size: 15px;
+    }
+    .card_person-info_name,.card_person-info_position{
+        font-size: 10px;
+    }
+    .card_person-img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .clients{
+        padding: 0.5rem;
+        gap: 20px;
+    }
+    .clients__content-heading,.clients__content-text{
+        font-size: 10px;
+    }
+    .clients__cards{
+        gap: 5px;
+    }
+    .card_quotes-img{
+        width: 30px;
+    }
+    .card_quotes-img img{
+        width: 100%;
+    }
+    .card_text{
+        font-size: 10px;
+    }
+    .card{
+        padding: 1rem;
+    }
+}

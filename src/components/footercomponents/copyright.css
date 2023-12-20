@@ -1,0 +1,43 @@
+.copyright{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 100%;
+    border-bottom:1px solid white ;
+    margin: 1rem 0;
+}
+
+.c-contents{
+    padding:1rem ;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.c-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px){
+    .c-contents{
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+        gap: 40px;
+    }
+    .c-icon{
+        width: 20px;
+    }
+    .c-icon img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,182 @@
+/* Fonts__styling */
+*{
+  font-family: var(--font-base);
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.text__gradient{
+  font-family: var(--font-base);
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.text__grey{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text__sm{
+  font-size: 16px;
+}
+.text__lg{
+  font-size: 18px;
+}
+
+.heading__lg{
+  font-size: 72px;
+}
+.heading__sm{
+font-size: 48px;
+font-weight: 500;
+}
+
+/* Others */
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background: rgba(9, 151, 124, 0.1);
+}
+
+.icon img{
+  width: 32px;
+  height: 32px;
+}
+
+.section__padding{
+  padding: 4rem 6rem;
+}
+
+.custom__button{
+  width: 150px;
+  height: 60px;
+  font-family: var(--font-base);
+  font-weight: 500;
+  background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+border-radius: 10px;
+padding: 0.9rem 2rem;
+border: none;
+cursor: pointer;
+}
+
+
+/* Content Cards */
+.gradient__card{
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 20px;
+}
+
+.gradient__card-reverse{
+ 
+
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 100% 0%, #FFFFFF 0%, #6D6D6D 29%, #11101D 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 100% 0%, #FFFFFF 0%, #6D6D6D 29%, #11101D 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 100% 0%, #FFFFFF 0%, #6D6D6D 29%, #11101D 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 100% 0%, #FFFFFF 0%, #6D6D6D 29%, #11101D 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 100% 0%, #FFFFFF 0%, #6D6D6D 29%, #11101D 100%);
+
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, .1);
+border-radius: 15px;
+
+}
+
+
+/* Backgrounds */
+.home__bg{
+   /* ff 3.6+ */
+   background:-moz-radial-gradient(circle at 91% 27%, #002853 0%, #040C18 100%);
+
+   /* safari 5.1+,chrome 10+ */
+   background:-webkit-radial-gradient(circle at 91% 27%, #002853 0%, #040C18 100%);
+
+   /* opera 11.10+ */
+   background:-o-radial-gradient(circle at 91% 27%, #002853 0%, #040C18 100%);
+
+   /* ie 10+ */
+   background:-ms-radial-gradient(circle at 91% 27%, #002853 0%, #040C18 100%);
+
+   /* global 92%+ browsers support */
+   background:radial-gradient(circle at 91% 27%, #002853 0%, #040C18 100%);
+
+}
+
+.features__bg{
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 0% 77%, #002853 0%, #040C18 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 0% 77%, #002853 0%, #040C18 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 0% 77%, #002853 0%, #040C18 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 0% 77%, #002853 0%, #040C18 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 0% 77%, #002853 0%, #040C18 100%);
+
+}
+
+.neutral__bg{
+  background-color: #040C18;
+}
+
+.product__bg{
+
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 0% 43%, #002853 0%, #040C18 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 0% 43%, #002853 0%, #040C18 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 0% 43%, #002853 0%, #040C18 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 0% 43%, #002853 0%, #040C18 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 0% 43%, #002853 0%, #040C18 100%);
+
+}
+
+.clients__bg{
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 100% 44%, #002853 0%, #040C18 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 100% 44%, #002853 0%, #040C18 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 100% 44%, #002853 0%, #040C18 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 100% 44%, #002853 0%, #040C18 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 100% 44%, #002853 0%, #040C18 100%);
+}
+
